@@ -1,0 +1,114 @@
+ascii-hug::shadow #ascii-hug
+{
+    height: 25px;
+    width: 150px;
+    font: 1.1em verdana;
+    letter-spacing: -1.5px;
+}
+
+ascii-hug::shadow #ascii-hug div {
+    float: left;
+}
+
+ascii-hug::shadow .right-arm {
+    /* dirty fix */
+    padding-right: 1px;
+    backface-visibility: hidden;
+    animation: arm-movement 3s ease-in forwards 1;
+    -webkit-animation: arm-movement 3s ease-in forwards 1;
+    -moz-animation: arm-movement 3s ease-in forwards 1;
+    -o-animation: arm-movement 3s ease-in forwards 1;
+    -webkit-transform-origin: center right;
+}
+
+ascii-hug::shadow .left-arm {
+    backface-visibility: hidden;
+    animation: arm-movement 3s ease-in forwards 1;
+    -webkit-animation: arm-movement 3s ease-in forwards 1;
+    -moz-animation: arm-movement 3s ease-in forwards 1;
+    -o-animation: arm-movement 3s ease-in forwards 1;
+    -webkit-transform-origin: center left;
+}
+
+ascii-hug::shadow .right-hand {
+    animation: right-hand-movement 3s forwards;
+    -webkit-animation: right-hand-movement 3s forwards ease-in;
+    -moz-animation: right-hand-movement 3s forwards;
+    -o-animation: right-hand-movement 3s forwards;
+}
+
+ascii-hug::shadow .left-hand {
+    animation: left-hand-movement 3s forwards;
+    -webkit-animation: left-hand-movement 3s forwards ease-in;
+    -moz-animation: left-hand-movement 3s forwards;
+    -o-animation: left-hand-movement 3s forwards;
+}
+
+/* ARM MOVEMENT =============================================================================================*/
+@keyframes arm-movement
+{
+    100% {transform: scaleX(5);}
+}
+
+@-webkit-keyframes arm-movement
+{
+    100% {-webkit-transform: scaleX(5);}
+}
+
+@-moz-keyframes arm-movement
+{
+    100% {-moz-transform: scaleX(5);}
+}
+
+@-o-keyframes arm-movement
+{
+    100% {transform: scaleX(5);}
+}
+
+
+/* LEFT HAND MOVEMENT =============================================================================================*/
+@keyframes left-hand-movement
+{
+    100% {transform: translateX(30px);}
+}
+
+@-webkit-keyframes left-hand-movement
+{
+    100% {-webkit-transform: translateX(30px);}
+}
+
+@-moz-keyframes left-hand-movement
+{
+    100% {-moz-transform: translateX(30px);}
+}
+
+@-o-keyframes left-hand-movement
+{
+    100% {transform: translateX(30px);}
+}
+
+
+/* RIGHT HAND MOVEMENT =============================================================================================*/
+@keyframes tight-hand-movement
+{
+    0%	 {transform: translateX(-1px);}
+    100% {transform: translateX(-30px);}
+}
+
+@-webkit-keyframes right-hand-movement
+{
+    0%	 {-webkit-transform: translateX(-1px);}
+    100% {-webkit-transform: translateX(-30px);}
+}
+
+@-moz-keyframes right-hand-movement
+{
+    0%	 {-moz-transform: translateX(-1px);}
+    100% {-moz-transform: translateX(-30px);}
+}
+
+@-o-keyframes right-hand-movement
+{
+    0%	 {transform: translateX(-1px);}
+    100% {transform: translateX(-30px);}
+}

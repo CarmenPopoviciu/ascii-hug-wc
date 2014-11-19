@@ -1,0 +1,11 @@
+{
+    "name": "ascii-hug",
+    "version": "1.0.0",
+    "dependencies": {},
+    "keywords": [
+        "web components",
+        "custom elements",
+        "ascii",
+        "hug"
+    ]
+}
